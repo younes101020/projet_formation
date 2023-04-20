@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.exemple.demo.entities.Compte;
-import com.exemple.demo.enums.TypeCompte;
-import com.exemple.demo.repositories.CompteRepository;
+import com.exemple.demo.enums.TypeExpense;
+import com.exemple.demo.repositories.ExpenseRepository;
 
 @SpringBootApplication
 public class CoursIntroBddSpringJpaApplication {
@@ -19,7 +19,7 @@ public class CoursIntroBddSpringJpaApplication {
 	}
 	
 	@Bean
-	CommandLineRunner start(CompteRepository compteRepository) {
+	CommandLineRunner start(ExpenseRepository compteRepository) {
 		return args -> {
 			
 			/*

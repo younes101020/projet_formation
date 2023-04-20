@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.exemple.demo.entities.Compte;
-import com.exemple.demo.repositories.CompteRepository;
+import com.exemple.demo.repositories.ExpenseRepository;
 
 @RestController
-public class CompteRestController {
+public class ExpenseRestController {
 	
 	/*@Autowired
 	private CompteRepository compteRepository;
