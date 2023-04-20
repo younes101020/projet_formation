@@ -19,15 +19,15 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Client {
+public class User {
 	
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long Id;
-	private String nom;
-	private String prenom;
+	private Long id;
+	private String name;
+	private String firstname;
+	private String password;
 	@Column(unique = true)
 	private String mail;
-	private Date dateNaissance;
-	@ManyToMany(mappedBy = "Clients", fetch = FetchType.EAGER)
+	@ManyToMany(mappedBy = "User", fetch = FetchType.EAGER)
 	private List<Compte> comptes = new ArrayList<Compte>();
 }
