@@ -7,7 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.exemple.demo.entities.Compte;
 import com.exemple.demo.enums.TypeExpense;
 import com.exemple.demo.repositories.ExpenseRepository;
 
