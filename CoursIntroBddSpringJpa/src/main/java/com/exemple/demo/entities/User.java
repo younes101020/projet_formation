@@ -28,10 +28,10 @@ public class User {
 	@Column(unique = true)
 	private String mail;
 	
-	@OneToMany(mappedBy = "travel", cascade = CascadeType.ALL)
-	private List<Expense> expenses = new ArrayList<Expense>();
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+	private List<Travel> travels = new ArrayList<Travel>();
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-	private List<User> users = new ArrayList<User>();
+	private List<Participant> particpants = new ArrayList<Participant>();
 	
 }
